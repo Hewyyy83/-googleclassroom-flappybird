@@ -167,7 +167,7 @@ function detectCollision(a, b) {
            a.y + a.height > b.y;    //a's bottom left corner passes b's top left corner
 }
 document.addEventListener("keydown", (e) => {
-    if (e.code === "KeyX") { // Replace "KeyH" with the desired key
-        document.body.style.display = "none"; // Hides the entire webpage
+    if (e.code === "KeyX") { // Replace "KeyX" with the desired key
+        window.location.href = "about:blank"; // Redirects to a blank page
     }
 });
