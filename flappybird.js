@@ -166,3 +166,8 @@ function detectCollision(a, b) {
            a.y < b.y + b.height &&  //a's top left corner doesn't reach b's bottom left corner
            a.y + a.height > b.y;    //a's bottom left corner passes b's top left corner
 }
+document.addEventListener("keydown", (e) => {
+    if (e.code === "KeyX") { // Replace "KeyH" with the desired key
+        document.body.style.display = "none"; // Hides the entire webpage
+    }
+});
